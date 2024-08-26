@@ -15,7 +15,10 @@ target/
 *.ipr
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 13109cffb6b8223e8acaa58f4e11d7214b4cdc1a
 ### Eclipse ###
 .apt_generated
 .classpath
