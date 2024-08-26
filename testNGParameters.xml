@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite de pruebas 1" thread-count="2" parallel="tests">
+
+    <!-- CASO DE PRUEBA 1 -->
+    <test name="Test Get Objects with id 5 and statusCode 200">
+        <parameter name="id" value="/2"></parameter>
+        <parameter name="EsperadoStatusCode" value="200"></parameter>
+        <classes>
+            <class name="tests.apiPublica.GetSingleObjects"> </class>
+        </classes>
+    </test>
+
+    <!-- CASO DE PRUEBA 2 -->
+        <test name="Test Get Objects with id 50 and statusCode 404">
+        <parameter name="id" value="/50"></parameter>
+        <parameter name="EsperadoStatusCode" value="404"></parameter>
+        <classes>
+            <class name="tests.apiPublica.GetSingleObjects"> </class>
+        </classes>
+    </test>
+
+
+</suite>
